@@ -3,8 +3,7 @@ import pandas as pd
 import re
 
 app = Flask(__name__)
-app.secret_key = 'Villomax'  # Clave secreta para la sesión
-
+app.secret_key = 'Villomax'
 datos = pd.read_excel("datospersonales.xlsx")
 
 def search_nombre(patron):
